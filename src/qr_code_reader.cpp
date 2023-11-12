@@ -53,7 +53,7 @@ private:
             if(!isSucess)
             {
                 std_msgs::msg::String qr_content;
-                qr_content.data = "FAIL to Get QR Code From Image";
+                qr_content.data = "FAIL : No QR Code Detected on the Image";
                 this->publisher_->publish(qr_content);
             }
 

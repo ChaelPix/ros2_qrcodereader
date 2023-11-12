@@ -5,11 +5,17 @@
 
 class WebcamPublisher : public rclcpp::Node {
 public:
-    WebcamPublisher(int frequency) : Node("webcam_publisher"), capture(0) {
+    WebcamPublisher() : Node("webcam_publisher"), capture(0) {
+
         if (!capture.isOpened()) {
             RCLCPP_ERROR(this->get_logger(), "Failed to open the webcam");
             rclcpp::shutdown();
         }
+
+        //default f in case of
+        int d_frequency = 100;
+        this->declare_parameter<int>("frequency", d_frequency);
+        int frequency = this->get_parameter("frequency").as_int();
 
         publisher = this->create_publisher<sensor_msgs::msg::Image>("/camera/image_raw", 10);
         timer = this->create_wall_timer(
@@ -36,15 +42,9 @@ private:
     rclcpp::TimerBase::SharedPtr timer;
 };
 
-int main(int argc, char** argv) {
+int main(int argc, char **argv) {
     rclcpp::init(argc, argv);
-    int frequency = 100; 
-
-    if (argc > 1) {
-        frequency = std::stoi(argv[1]);
-    }
-
-    rclcpp::spin(std::make_shared<WebcamPublisher>(frequency));
+    rclcpp::spin(std::make_shared<WebcamPublisher>());
     rclcpp::shutdown();
     return 0;
 }
