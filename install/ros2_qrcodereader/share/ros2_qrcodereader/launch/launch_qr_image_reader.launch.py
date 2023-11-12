@@ -4,7 +4,7 @@ from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration, Command
 from ament_index_python.packages import get_package_share_directory
 
-#ros2 launch ros2_qrcodereader launch_qr_image_reader.launch.py image_path:=/home/user/path/to/image.png
+#ros2 launch ros2_qrcodereader launch_qr_image_reader.launch.py image_path:=$HOME/path/to/image.png
 def generate_launch_description():
 
     pkg_share = get_package_share_directory('ros2_qrcodereader')

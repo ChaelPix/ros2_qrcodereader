@@ -38,6 +38,7 @@ private:
             //Scan image
             scanner_.scan(zbar_image);
 
+            bool isSucess = false;
             for(auto symbol = zbar_image.symbol_begin(); symbol != zbar_image.symbol_end(); ++symbol) {
 
                 if(symbol->get_type() == zbar::ZBAR_QRCODE) {
@@ -45,9 +46,17 @@ private:
                     std_msgs::msg::String qr_content;
                     qr_content.data = symbol->get_data();
                     this->publisher_->publish(qr_content);
+                    isSucess = true;
                 }
-
             }
+
+            if(!isSucess)
+            {
+                std_msgs::msg::String qr_content;
+                qr_content.data = "FAIL to Get QR Code From Image";
+                this->publisher_->publish(qr_content);
+            }
+
         } catch (cv_bridge::Exception& e) 
         {
             RCLCPP_ERROR(this->get_logger(), "Could not convert image: %s", e.what());
