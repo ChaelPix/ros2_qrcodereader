@@ -17,17 +17,24 @@ It's the main node which output qr code content as a string from an input image.
 - Try to read a QrCode
 -  If successful, publish the QrCode content as a `std_msgs::msg::String` on the `/qr_code_content` topic.
 
-+ To launch this node :
-<pre>ros2 launch ros2_qrcodereader launch_qr_reader.launch.py</pre>
-
 #
 2. `QRImagePublisher() : Node("qr_image_publisher")`
 
-It's a secondary node which pub images from files to `/camera/image_raw`. Useful if to test some images.
+It's a secondary node which pub images from files to `/camera/image_raw`. Launch it with QRCodeReader to test images.
 - Get the path from `image_path:=` argument, if no argument it'll load "bonjourros2.png".
 - Publish the image every 1 second on `/camera/image_raw` topic.
 
-+ To launch this node :
+
+<br>
+<br>
+
+  
+# Launch files :
+
++ Launch QRCodeReader :
+<pre>ros2 launch ros2_qrcodereader launch_qr_reader.launch.py</pre>
+
++ Launch QRCodeReader and QRImagePublisher :
 <pre>ros2 launch ros2_qrcodereader launch_qr_image_reader.launch.py</pre>
 or
 <pre>ros2 launch ros2_qrcodereader launch_qr_image_reader.launch.py image_path:=$HOME/path/to/image.png</pre>
