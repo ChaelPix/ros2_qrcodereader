@@ -9,7 +9,27 @@ Read QrCode from Images.
 <br>
 <br>
   
-# This package has 2 nodes :
+ 
+# Launch files :
+
++ Launch QRCodeReader :
+<pre>ros2 launch ros2_qrcodereader launch_qr_reader.launch.py</pre>
+
++ Launch QRCodeReader and QRImagePublisher :
+<pre>ros2 launch ros2_qrcodereader launch_qr_image_reader.launch.py</pre>
+or
+<pre>ros2 launch ros2_qrcodereader launch_qr_image_reader.launch.py image_path:=$HOME/path/to/image.png</pre>
+
++ Launch Webcam and QRCodeReader :
+<pre>ros2 launch ros2_qrcodereader launch_webcam_qr_reader.launch.py</pre>
+or
+<pre>ros2 launch ros2_qrcodereader launch_webcam_qr_reader.launch.py frequency:=2000</pre>
+
+<br>
+<br>
+
+
+# This package has 3 nodes :
 1. `QRCodeReader() : Node("qr_code_reader")`
 
 It's the main node which output qr code content as a string from an input image.
@@ -24,17 +44,8 @@ It's a secondary node which pub images from files to `/camera/image_raw`. Launch
 - Get the path from `image_path:=` argument, if no argument it'll load "bonjourros2.png".
 - Publish the image every 1 second on `/camera/image_raw` topic.
 
+#
+3. `WebcamPublisher() : Node("webcam_publisher")`
 
-<br>
-<br>
-
-  
-# Launch files :
-
-+ Launch QRCodeReader :
-<pre>ros2 launch ros2_qrcodereader launch_qr_reader.launch.py</pre>
-
-+ Launch QRCodeReader and QRImagePublisher :
-<pre>ros2 launch ros2_qrcodereader launch_qr_image_reader.launch.py</pre>
-or
-<pre>ros2 launch ros2_qrcodereader launch_qr_image_reader.launch.py image_path:=$HOME/path/to/image.png</pre>
+Get images from the computer webcam and send it to `/camera/image_raw`topic. 
+- Get Images at a X frequency (default is 100ms) and send it to `/camera/image_raw` topic.
