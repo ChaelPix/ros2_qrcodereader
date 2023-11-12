@@ -18,7 +18,7 @@ It's the main node which output qr code content as a string from an input image.
 -  If successful, publish the QrCode content as a `std_msgs::msg::String` on the `/qr_code_content` topic.
 
 + To launch this node :
- `ros2 launch ros2_qrcodereader launch_qr_reader.launch.py`
+<pre>ros2 launch ros2_qrcodereader launch_qr_reader.launch.py</pre>
 
 #
 2. `QRImagePublisher() : Node("qr_image_publisher")`
