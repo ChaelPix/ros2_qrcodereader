@@ -2,6 +2,7 @@
 /home/pix/workspace/ros2_qrcodereader/install/ros2_qrcodereader/lib/ros2_qrcodereader/qr_image_publisher
 /home/pix/workspace/ros2_qrcodereader/install/ros2_qrcodereader/share/ros2_qrcodereader/launch/launch_qr_image_reader.launch.py
 /home/pix/workspace/ros2_qrcodereader/install/ros2_qrcodereader/share/ros2_qrcodereader/launch/launch_qr_reader.launch.py
+/home/pix/workspace/ros2_qrcodereader/install/ros2_qrcodereader/share/ros2_qrcodereader/imgs/cuberouge.png
 /home/pix/workspace/ros2_qrcodereader/install/ros2_qrcodereader/share/ros2_qrcodereader/imgs/bonjourros2.png
 /home/pix/workspace/ros2_qrcodereader/install/ros2_qrcodereader/share/ros2_qrcodereader/src/qr_image_publisher.cpp
 /home/pix/workspace/ros2_qrcodereader/install/ros2_qrcodereader/share/ros2_qrcodereader/src/qr_code_reader.cpp
