@@ -4,7 +4,7 @@ Read QrCode from Images.
 - Install dependencies :
 <pre>sudo apt-get install libopencv-dev ros-$ROS_DISTRO-cv-bridge libzbar-dev</pre>
 - Clone the package
-<pre>sgit clone git@github.com:ChaelPix/ros2_qrcodereader.git</pre>
+<pre>git clone git@github.com:ChaelPix/ros2_qrcodereader.git</pre>
 
 <br>
 <br>
