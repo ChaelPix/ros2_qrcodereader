@@ -24,7 +24,7 @@ public:
     }
 
     //create publisher with 1s fresh rate
-    publisher = this->create_publisher<sensor_msgs::msg::Image>("/camera/imageraw", 10);
+    publisher = this->create_publisher<sensor_msgs::msg::Image>("/camera/image_raw", 10);
     timer = this->create_wall_timer(
         std::chrono::milliseconds(1000),
         std::bind(&QRImagePublisher::timer_callback, this));
