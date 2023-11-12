@@ -25,8 +25,11 @@ add_executable(qr_image_publisher src/qr_image_publisher.cpp)
 ament_target_dependencies(qr_image_publisher rclcpp sensor_msgs cv_bridge OpenCV)
 target_link_libraries(qr_image_publisher ${ZBAR_LIBRARIES})
 
+add_executable(webcam_publisher src/webcam_publisher.cpp)
+ament_target_dependencies(webcam_publisher rclcpp sensor_msgs cv_bridge OpenCV)
+
 install(TARGETS
-  qr_code_reader qr_image_publisher
+  qr_code_reader qr_image_publisher webcam_publisher
   DESTINATION lib/${PROJECT_NAME})
 
 
