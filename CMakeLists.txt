@@ -21,13 +21,17 @@ add_executable(qr_code_reader src/qr_code_reader.cpp)
 ament_target_dependencies(qr_code_reader rclcpp sensor_msgs cv_bridge OpenCV)
 target_link_libraries(qr_code_reader ${ZBAR_LIBRARIES})
 
+add_executable(qr_image_publisher src/qr_image_publisher.cpp)
+ament_target_dependencies(qr_image_publisher rclcpp sensor_msgs cv_bridge OpenCV)
+target_link_libraries(qr_image_publisher ${ZBAR_LIBRARIES})
+
 install(TARGETS
-  qr_code_reader
+  qr_code_reader qr_image_publisher
   DESTINATION lib/${PROJECT_NAME})
 
-# install launch directory
+
 install(
-  DIRECTORY launch
+  DIRECTORY launch imgs src
   DESTINATION share/${PROJECT_NAME}
 )
 

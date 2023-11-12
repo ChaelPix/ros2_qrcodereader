@@ -268,17 +268,8 @@ PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 //Name of the computer/site where compile is being run
 SITE:STRING=pix-Predator-PH317-52
 
-//Path to a file.
-TINYXML2_INCLUDE_DIR:PATH=/usr/include
-
-//Path to a library.
-TINYXML2_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libtinyxml2.so
-
 //The directory containing a CMake configuration file for TinyXML2.
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for ZBar.
-ZBar_DIR:PATH=ZBar_DIR-NOTFOUND
 
 //Path to a library.
 _lib:FILEPATH=/opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -391,12 +382,6 @@ ament_xmllint_BIN:FILEPATH=/opt/ros/humble/bin/ament_xmllint
 //The directory containing a CMake configuration file for builtin_interfaces.
 builtin_interfaces_DIR:PATH=/opt/ros/humble/share/builtin_interfaces/cmake
 
-//The directory containing a CMake configuration file for class_loader.
-class_loader_DIR:PATH=/opt/ros/humble/share/class_loader/cmake
-
-//The directory containing a CMake configuration file for console_bridge.
-console_bridge_DIR:PATH=/usr/lib/x86_64-linux-gnu/console_bridge/cmake
-
 //The directory containing a CMake configuration file for cv_bridge.
 cv_bridge_DIR:PATH=/opt/ros/humble/share/cv_bridge/cmake
 
@@ -418,17 +403,11 @@ foonathan_memory_DIR:PATH=/opt/ros/humble/lib/foonathan_memory/cmake
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/humble/share/geometry_msgs/cmake
 
-//The directory containing a CMake configuration file for image_transport.
-image_transport_DIR:PATH=/opt/ros/humble/share/image_transport/cmake
-
 //The directory containing a CMake configuration file for libstatistics_collector.
 libstatistics_collector_DIR:PATH=/opt/ros/humble/share/libstatistics_collector/cmake
 
 //The directory containing a CMake configuration file for libyaml_vendor.
 libyaml_vendor_DIR:PATH=/opt/ros/humble/share/libyaml_vendor/cmake
-
-//The directory containing a CMake configuration file for message_filters.
-message_filters_DIR:PATH=/opt/ros/humble/share/message_filters/cmake
 
 //Path to a library.
 pkgcfg_lib_ZBAR_zbar:FILEPATH=/usr/lib/x86_64-linux-gnu/libzbar.so
@@ -438,9 +417,6 @@ pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_ssl:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
-
-//The directory containing a CMake configuration file for pluginlib.
-pluginlib_DIR:PATH=/opt/ros/humble/share/pluginlib/cmake
 
 //The directory containing a CMake configuration file for rcl.
 rcl_DIR:PATH=/opt/ros/humble/share/rcl/cmake
@@ -553,9 +529,6 @@ statistics_msgs_DIR:PATH=/opt/ros/humble/share/statistics_msgs/cmake
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/humble/share/std_msgs/cmake
 
-//The directory containing a CMake configuration file for tinyxml2_vendor.
-tinyxml2_vendor_DIR:PATH=/opt/ros/humble/share/tinyxml2_vendor/cmake
-
 //The directory containing a CMake configuration file for tracetools.
 tracetools_DIR:PATH=/opt/ros/humble/share/tracetools/cmake
 
@@ -564,9 +537,6 @@ xmllint_BIN:FILEPATH=/usr/bin/xmllint
 
 //The directory containing a CMake configuration file for yaml.
 yaml_DIR:PATH=/opt/ros/humble/cmake
-
-//The directory containing a CMake configuration file for zbar.
-zbar_DIR:PATH=zbar_DIR-NOTFOUND
 
 
 ########################
@@ -742,10 +712,6 @@ OPENSSL_SSL_LIBRARY-ADVANCED:INTERNAL=1
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: TINYXML2_INCLUDE_DIR
-TINYXML2_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: TINYXML2_LIBRARY
-TINYXML2_LIBRARY-ADVANCED:INTERNAL=1
 ZBAR_CFLAGS:INTERNAL=
 ZBAR_CFLAGS_I:INTERNAL=
 ZBAR_CFLAGS_OTHER:INTERNAL=

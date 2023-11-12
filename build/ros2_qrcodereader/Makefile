@@ -210,6 +210,19 @@ qr_code_reader/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qr_code_reader.dir/build.make CMakeFiles/qr_code_reader.dir/build
 .PHONY : qr_code_reader/fast
 
+#=============================================================================
+# Target rules for targets named qr_image_publisher
+
+# Build rule for target.
+qr_image_publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qr_image_publisher
+.PHONY : qr_image_publisher
+
+# fast build rule for target.
+qr_image_publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qr_image_publisher.dir/build.make CMakeFiles/qr_image_publisher.dir/build
+.PHONY : qr_image_publisher/fast
+
 src/qr_code_reader.o: src/qr_code_reader.cpp.o
 .PHONY : src/qr_code_reader.o
 
@@ -234,6 +247,30 @@ src/qr_code_reader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qr_code_reader.dir/build.make CMakeFiles/qr_code_reader.dir/src/qr_code_reader.cpp.s
 .PHONY : src/qr_code_reader.cpp.s
 
+src/qr_image_publisher.o: src/qr_image_publisher.cpp.o
+.PHONY : src/qr_image_publisher.o
+
+# target to build an object file
+src/qr_image_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qr_image_publisher.dir/build.make CMakeFiles/qr_image_publisher.dir/src/qr_image_publisher.cpp.o
+.PHONY : src/qr_image_publisher.cpp.o
+
+src/qr_image_publisher.i: src/qr_image_publisher.cpp.i
+.PHONY : src/qr_image_publisher.i
+
+# target to preprocess a source file
+src/qr_image_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qr_image_publisher.dir/build.make CMakeFiles/qr_image_publisher.dir/src/qr_image_publisher.cpp.i
+.PHONY : src/qr_image_publisher.cpp.i
+
+src/qr_image_publisher.s: src/qr_image_publisher.cpp.s
+.PHONY : src/qr_image_publisher.s
+
+# target to generate assembly for a file
+src/qr_image_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qr_image_publisher.dir/build.make CMakeFiles/qr_image_publisher.dir/src/qr_image_publisher.cpp.s
+.PHONY : src/qr_image_publisher.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +287,13 @@ help:
 	@echo "... ros2_qrcodereader_uninstall"
 	@echo "... uninstall"
 	@echo "... qr_code_reader"
+	@echo "... qr_image_publisher"
 	@echo "... src/qr_code_reader.o"
 	@echo "... src/qr_code_reader.i"
 	@echo "... src/qr_code_reader.s"
+	@echo "... src/qr_image_publisher.o"
+	@echo "... src/qr_image_publisher.i"
+	@echo "... src/qr_image_publisher.s"
 .PHONY : help
 
 

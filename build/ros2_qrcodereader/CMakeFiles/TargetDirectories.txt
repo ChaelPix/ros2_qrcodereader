@@ -1,6 +1,7 @@
 /home/pix/workspace/ros2_qrcodereader/build/ros2_qrcodereader/CMakeFiles/uninstall.dir
 /home/pix/workspace/ros2_qrcodereader/build/ros2_qrcodereader/CMakeFiles/ros2_qrcodereader_uninstall.dir
 /home/pix/workspace/ros2_qrcodereader/build/ros2_qrcodereader/CMakeFiles/qr_code_reader.dir
+/home/pix/workspace/ros2_qrcodereader/build/ros2_qrcodereader/CMakeFiles/qr_image_publisher.dir
 /home/pix/workspace/ros2_qrcodereader/build/ros2_qrcodereader/CMakeFiles/test.dir
 /home/pix/workspace/ros2_qrcodereader/build/ros2_qrcodereader/CMakeFiles/edit_cache.dir
 /home/pix/workspace/ros2_qrcodereader/build/ros2_qrcodereader/CMakeFiles/rebuild_cache.dir
