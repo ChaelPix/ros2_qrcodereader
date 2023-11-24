@@ -1,0 +1,12 @@
+/workspace/robot_ws/build_aarch64/ros2_qrcodereader/CMakeFiles/uninstall.dir
+/workspace/robot_ws/build_aarch64/ros2_qrcodereader/CMakeFiles/ros2_qrcodereader_uninstall.dir
+/workspace/robot_ws/build_aarch64/ros2_qrcodereader/CMakeFiles/qr_code_reader.dir
+/workspace/robot_ws/build_aarch64/ros2_qrcodereader/CMakeFiles/qr_image_publisher.dir
+/workspace/robot_ws/build_aarch64/ros2_qrcodereader/CMakeFiles/webcam_publisher.dir
+/workspace/robot_ws/build_aarch64/ros2_qrcodereader/CMakeFiles/test.dir
+/workspace/robot_ws/build_aarch64/ros2_qrcodereader/CMakeFiles/edit_cache.dir
+/workspace/robot_ws/build_aarch64/ros2_qrcodereader/CMakeFiles/rebuild_cache.dir
+/workspace/robot_ws/build_aarch64/ros2_qrcodereader/CMakeFiles/list_install_components.dir
+/workspace/robot_ws/build_aarch64/ros2_qrcodereader/CMakeFiles/install.dir
+/workspace/robot_ws/build_aarch64/ros2_qrcodereader/CMakeFiles/install/local.dir
+/workspace/robot_ws/build_aarch64/ros2_qrcodereader/CMakeFiles/install/strip.dir

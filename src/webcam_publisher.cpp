@@ -5,7 +5,7 @@
 
 class WebcamPublisher : public rclcpp::Node {
 public:
-    WebcamPublisher() : Node("webcam_publisher"), capture(0) {
+    WebcamPublisher() : Node("webcam_publisher"), capture(30) {
 
         if (!capture.isOpened()) {
             RCLCPP_ERROR(this->get_logger(), "Failed to open the webcam");
